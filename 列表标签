@@ -1,0 +1,68 @@
+<script>
+        /*
+            1.无序列表
+              ul 表示无序列表的整体，用于包裹li标签
+              li 表示无序列表的每一项，用于包含每一行的内容
+            2.有序列表
+              ol 表示有序列表的整体，用于包裹li标签
+              li 表示有序列表的每一项，用于包含每一行的内容
+            3.自定义列表
+              dl 表示自定义列表的整体，用于包裹dt/dd标签
+              dt 表示自定义列表的主题
+              dd 表示自定义列表的针对主题的每一项内容
+            4.表格标签
+              table 表格整体，可用于包裹多个tr
+              tr 表格每行，可用于包裹td
+              td 表格单元格，可用于包裹内容
+            5.表格属性
+              border  边框宽度
+              widht  表格宽度
+              height 表格高度  
+            6.表格标题
+              caption 表格整体大标题，默认在表格整体顶部居中位置显示
+              th 表头单元格 表示一列小标题，通常用于表格第一行
+            7.表格的结构标签（了解）
+              thead 表格头部
+              tbody 表格主体
+              tfoot 表格底部
+            8.合并单元格
+              跨行合并（垂直合并成一个） rowspan
+              跨列合并（水平合并成一个） colspan
+        */
+    </script>
+    <!-- <ul>
+        <li>榴莲</li>
+        <li>香蕉</li>
+        <li>苹果</li>
+    </ul>
+    <ol>
+        <li>张三：100</li>
+        <li>李四：98</li>
+    </ol> -->
+    <table border="1" widht="600" height="400">
+        <caption>学生成绩单</caption>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>成绩</th>
+                <th>评语</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>张三</td>
+                <td rowspan="2">95</td>
+                <td>真棒</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <!-- <td>85</td> -->
+                <td>下次继续努力</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>总结</td>
+            <td colspan="2">郎才女貌</td>
+            <!-- <td>配对成功</td> -->
+        </tfoot>
+    </table>
